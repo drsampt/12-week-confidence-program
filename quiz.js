@@ -13,7 +13,7 @@ export class Quiz {
   }
 
   get progress() {
-    return ((this.currentIndex) / this.questions.length) * 100;
+    return ((this.currentIndex + 1) / this.questions.length) * 100;
   }
 
   get isFirst() {
@@ -55,6 +55,7 @@ export class Quiz {
   next() {
     if (!this.canAdvance()) return false;
     if (this.isLast) {
+      // Ensure the answer is saved before calling onComplete
       this.onComplete(this.answers);
       return true;
     }
