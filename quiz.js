@@ -1,4 +1,4 @@
-import { questions } from "../data/questions.js";
+import { questions } from "./questions.js";
 
 export class Quiz {
   constructor(onComplete) {

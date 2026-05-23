@@ -1,8 +1,8 @@
 import { Quiz } from "./quiz.js";
 import { generatePlan, getPlanSummary } from "./planGenerator.js";
 import { generatePersonalizedContent, getStoredKey, storeKey } from "./claudeApi.js";
-import { questions } from "../data/questions.js";
-import { phases } from "../data/weeklyStructure.js";
+import { questions } from "./questions.js";
+import { phases } from "./weeklyStructure.js";
 
 const STORAGE_KEY = "ceo_program_plan";
 
