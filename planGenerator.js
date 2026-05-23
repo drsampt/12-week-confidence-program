@@ -1,4 +1,4 @@
-import { weeks, phases } from "../data/weeklyStructure.js";
+import { weeks, phases } from "./weeklyStructure.js";
 
 export function generatePlan(answers) {
   const profile = buildProfile(answers);
